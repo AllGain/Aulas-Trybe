@@ -3,7 +3,7 @@ const b = 1;
 const c = 178;
 const abc = a+b+c;
 let peca = 'Torre';
-let pecal = peca.toLowerCase()
+let pecal = peca.toLowerCase();
 let nota = 90;
 
 const ad = (a+b);
@@ -12,7 +12,7 @@ const mult = (a*b);
 const div = (a/b);
 const mod = (a%b);
 
-//ex7
+/*ex7
 if (nota>=90 && nota<=100){
     console.log('Nota A');
 }
