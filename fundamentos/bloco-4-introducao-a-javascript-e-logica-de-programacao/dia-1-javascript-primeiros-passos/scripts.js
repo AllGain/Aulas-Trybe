@@ -2,6 +2,8 @@ const a = 0;
 const b = 1;
 const c = 178;
 const abc = a+b+c;
+let peca = 'Torre';
+let pecal = peca.toLowerCase()
 
 const ad = (a+b);
 const sub = (a-b);
@@ -9,7 +11,29 @@ const mult = (a*b);
 const div = (a/b);
 const mod = (a%b);
 
-//ex5
+switch (pecal) {
+    case 'peão'||'peao' :
+        console.log("Peão => Anda 1Casa Frente/Ataca 1Casa diagonal");
+        break;
+    case 'torre' :
+        console.log('torre => Anda/Ataca Vertical/Horizontal nCasas');
+        break;
+    case 'cavalo' :
+        console.log('cavalo => Anda/Ataca em "L"');
+        break;
+    case 'bispo' :
+        console.log('bispo => Anda/Ataca na diagonal nCasas');
+        break;
+    case 'rainha' :
+        console.log('rainha => Anda/Ataca nCasas todas direções');
+        break;
+    case 'rei' :
+        console.log('rei => Anda/Ataca 1Casa todas direções');
+        break;
+    default:
+        console.log('não é peça')    
+}
+/*ex5
 if (a+b+c === 180) {
     console.log(true);
 }
