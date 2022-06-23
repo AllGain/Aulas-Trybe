@@ -4,9 +4,8 @@ let even = [];
 let odd = [];
 let umA25 = [];
 
-//ex9
+/*ex9
 for (let index9=1; index9 <= 25; index9++) {
-  
   umA25.push(index9/2);
 }
 console.log(umA25);
