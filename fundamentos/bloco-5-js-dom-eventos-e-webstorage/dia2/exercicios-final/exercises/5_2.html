@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      //ex1
+      const tagH1 = document.createElement("h1");
+      tagH1.innerText = "Exercício 5.2 - JavaScript DOM";
+      document.body.appendChild(tagH1);
+      //ex2
+      const tagMain = document.createElement("main");
+      tagMain.className = "main-content";
+      document.body.appendChild(tagMain);
+      //ex3
+      const tagSec = document.createElement("section");
+      tagSec.className = "center-content";
+      tagMain.appendChild(tagSec);
+      //ex4
+      const tagP = document.createElement("p");
+      tagSec.innerText = "Teste do Teste do Teste";
+      tagSec.appendChild(tagP);
+      //ex5
+      const tagSec2 = document.createElement("section");
+      tagSec2.className = "left-content";
+      tagMain.appendChild(tagSec2);
+      //ex6
+      const tagSec3 = document.createElement("section"); // criou a tag
+      tagSec3.className = "right-content";
+      tagMain.appendChild(tagSec3);
+      //ex7
+      const imgsrc = document.createElement("img");
+      imgsrc.src = "https://picsum.photos/200";
+      imgsrc.className = "small-image";
+      tagSec2.appendChild(imgsrc);
+      //ex8
+      const listaNO = document.createElement("ul");
+      const numeros = [
+        "um",
+        "dois",
+        "tres",
+        "quatro",
+        "cinco",
+        "seis",
+        "sete",
+        "oito",
+        "nove",
+        "dez",
+      ];
+      tagSec3.appendChild(listaNO);
+      for (const i in numeros) {
+        const listaLI = document.createElement("li");
+        listaLI.innerText = numeros[i];
+        listaNO.appendChild(listaLI);
+      }
+      //ex9
+      
+      for (let index = 0; index < 3; index++) {
+        let tagH3 = document.createElement("h3"); //deve estar dentro do loop for.
+        tagMain.appendChild(tagH3);
+      }
+    </script>
+  </body>
+</html>
