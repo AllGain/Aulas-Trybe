@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>TrybeTrip</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 id="title">Header da página</h1>
+    </header>
+    <main>
+      <div class="bloco-principal">
+        <form action="post">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            minlength="10"
+            maxlength="40"
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            name="nome"
+            id="email"
+            minlength="10"
+            maxlength="50"
+          />
+          <br />
+          <input type="radio" name="Op" class="op" id="op1" />
+          <label for="op1">Cidade</label>
+          <input type="radio" name="Op" class="op" id="op2" />
+          <label for="op2">Campo</label>
+          <input type="radio" name="Op" class="op" id="op3" />
+          <label for="op3">Praia</label>
+          <input type="radio" name="Op" class="op" id="op4" />
+          <label for="op4">Montanhas</label>
+          <br />
+          <label for="blankSpace">Espaço para digitar a resposta:</label>
+          <br />
+          <textarea
+            name="blankSpace"
+            id="blankSpace"
+            cols="30"
+            rows="10"
+            maxlength="500"
+          ></textarea
+          ><br />
+          <label for="data">Qual a melhor data para realizar sua viagem? <br> Data:</label>
+          <input type="text" name="data" id="data" placeholder="dd/mm/aaaa" />
+          <br />
+          <label for="agree1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            </label>
+          <input type="checkbox" name="agree1" id="agree1" /><br />
+          <label for="agree2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            </label>
+          <input type="checkbox" name="agree2" id="agree2" /><br>
+        </fieldset>
+        <button type="submit" id="botaoEnviar">Vou Ganhar a TrybeTrip</button>
+        <button type="button" id="limpar">Limpar Formulário</button>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
